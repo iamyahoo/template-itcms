@@ -1,0 +1,22 @@
+//development styles
+@import "dev/_normalize.scss";
+@import "dev/_variables.scss";
+@import "dev/_fonts.scss";
+@import "dev/_base.scss";
+@import "dev/_animations.scss";
+
+//blocks styles
+@import "blocks/_header.scss";
+@import "blocks/_nav.scss";
+@import "blocks/_page.scss";
+@import "blocks/_footer.scss";
+@import "blocks/_form.scss";
+@import "blocks/_ie.scss";
+@import "blocks/_links.scss";
+@import "blocks/_layout.scss";
+@import "blocks/_buttons.scss";
+@import "blocks/_checkbox.scss";
+@import "blocks/_styles.scss";
+
+//don't move
+@import "dev/_helpers.scss";

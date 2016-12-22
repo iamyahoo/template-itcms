@@ -1,0 +1,64 @@
+.layout-inner {
+  width: 100%;
+  max-width: 1240px;
+  min-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.layout-padding {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: 1200px) {
+
+  .layout-inner {
+    max-width: 1240px;
+    width: 100%;
+    min-width: 1240px;
+  }
+
+  .layout-padding {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
+@media (min-width: 641px) and (max-width: 1199px) {
+
+  /**
+    * size on tablet
+    */
+
+  .layout-inner {
+    min-width: 1240px;
+    width: 1240px;
+    max-width: 1240px;
+  }
+
+  .layout-padding {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
+@media (max-width: 640px) {
+
+  /**
+    * size on mobile
+    */
+
+  .layout-inner {
+    min-width: 320px;
+    width: 100%;
+    max-width: 640px;
+  }
+
+  .layout-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

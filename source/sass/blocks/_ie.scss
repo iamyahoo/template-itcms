@@ -1,0 +1,8 @@
+/* fuck ie */
+
+.internet-explorer {
+
+  & .page__inner {
+    height: calc(100vh - 70px - 50px); //100vh - header height - footer height
+  }
+}

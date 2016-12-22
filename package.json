@@ -1,0 +1,24 @@
+{
+  "name": "itcms",
+  "version": "1.0.0",
+  "author": "iamyahoo",
+  "devDependencies": {
+    "browser-sync": "^2.18.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-merge-media-queries": "^0.2.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^3.0.0",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-svgo": "^1.0.3",
+    "gulp-typograf": "^2.0.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.11",
+    "imagemin-pngquant": "^5.0.0",
+    "rimraf": "^2.5.4"
+  }
+}

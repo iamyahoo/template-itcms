@@ -1,0 +1,53 @@
+.link {
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  transition: color, .2s;
+  color: $color-gray-60;
+
+  &:hover {
+    color: $color-blue-50;
+  }
+
+  &:focus,
+  &:active {
+    outline: 0;
+    text-decoration: none;
+  }
+}
+
+.link_active {
+  color: $color-blue-50;
+}
+
+.link_light {
+  color: $color-blue-10;
+
+  &:hover {
+    color: $color-blue-50;
+  }
+}
+
+.link_dark {
+  color: $font-color_dark;
+
+  &:hover {
+    color: $color-blue-50;
+  }
+}
+
+.link_blue {
+  color: $color-blue-50;
+  
+  &:hover {
+    color: $color-blue-60;
+  }
+}
+
+.link_underlined {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
