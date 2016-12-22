@@ -45,22 +45,22 @@ var path = {
         fonts: 'source/fonts/**/*.*'
     },
     build: {
-        html: 'site/assets/',
-        js: 'site/assets/js/',
-        libs: 'site/assets/js/vendor',
-        css: 'site/assets/css/',
-        img: 'site/assets/i/',
-        svg: 'site/assets/i/svg',
-        fonts: 'site/assets/fonts/'
+        html: 'assets/',
+        js: 'assets/js/',
+        libs: 'assets/js/vendor',
+        css: 'assets/css/',
+        img: 'assets/i/',
+        svg: 'assets/i/svg',
+        fonts: 'assets/fonts/'
     },
-    clean: './site/assets/'
+    clean: './assets/'
 };
 
 
 /* development settings */
 var config = {
     server: {
-        baseDir: './site/assets/'
+        baseDir: './assets/'
     },
     tunnel: false,
     host: 'localhost',
