@@ -31,7 +31,7 @@ var path = {
         js: 'source/js/scripts.js',
         libs: 'source/js/vendor/**/*.*',
         style: 'source/sass/styles.scss',
-        img: 'source/i/**/*.*',
+        img: 'source/i/**/*.{jpg,png,svg}',
         svg: 'source/i/svg/*.svg',
         fonts: 'source/fonts/**/*.*'
     },
@@ -172,7 +172,9 @@ gulp.task('js:prod', function () {
 gulp.task('build', [
     'html:build',
     'style:build',
+    'style:prod',
     'js:build',
+    'js:prod',
     'image:build',
     'svg:build',
     'libs:build',
