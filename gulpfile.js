@@ -22,7 +22,9 @@ var gulp = require('gulp'),
     typograf = require('gulp-typograf'),
     rimraf = require('rimraf'),
     mmq = require('gulp-merge-media-queries'),
-    reload = browserSync.reload;
+    reload = browserSync.reload,
+    plumber = require('gulp-plumber'),
+    webp = require('gulp-webp');
 
 
 var path = {
@@ -89,6 +91,12 @@ gulp.task('fonts:build', function() {
         .pipe(gulp.dest(path.build.fonts))
 });
 
+gulp.task("webp", function () {
+    return gulp.src('src/img/*.jpg')
+        .pipe(webp())
+        .pipe(gulp.dest('src/img'));
+});
+
 gulp.task('image:build', function () {
     gulp.src(path.src.img)
         .pipe(imagemin({
@@ -116,12 +124,14 @@ gulp.task('libs:build', function() {
 
 gulp.task('style:build', function () {
     gulp.src(path.src.style)
+        .pipe(plumber())
         .pipe(sass({
             includePaths: ['source/sass/'],
             errLogToConsole: true
         }))
         .pipe(autoprefixer())
         .pipe(csscomb())
+        .pipe(plumber.stop())
         .pipe(gulp.dest(path.build.css))
         .pipe(reload({stream: true}));
 });
